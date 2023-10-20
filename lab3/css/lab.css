@@ -8,6 +8,18 @@
     background-color: #DDD8C4;
   }
 
-.screenshots {
+#file-structure {
+    width: 500px;
+}
+
+#main-html {
+  width: 500px;
+}
+
+#main-page {
+  width: 500px;
+}
+
+#changes {
     width: 500px;
 }

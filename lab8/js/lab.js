@@ -9,7 +9,7 @@ function isEven(x) {
 }
 
 console.log("Is 1 even? ", isEven(1));
-console.log("Is 1 even? ", isEven(1));
+console.log("Is 2 even? ", isEven(2));
 
 var array = [100, 35, 65, 54, 14, 98, 7]
 console.log("My array", array);

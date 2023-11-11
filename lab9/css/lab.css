@@ -1,0 +1,19 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+.special {
+    background-color: #ffcc00; /* Yellow background */
+    border: 2px dashed #4caf50; /* Dashed green border */
+    color: #4caf50; /* Green text color */
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle box shadow */
+    transform: rotate(5deg); /* Rotate the element slightly */
+}

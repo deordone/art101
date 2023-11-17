@@ -1,0 +1,44 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+  .text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Add styling for alternating sides of the conversation */
+.text:nth-child(even) {
+  text-align: left;
+}
+
+.text:nth-child(odd) {
+  text-align: right;
+}
+
+.text:nth-child(odd) p {
+  background-color: blue;
+  color: white;
+}
+
+/* Style for the input field */
+#user-input {
+  margin-top: 10px;
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+

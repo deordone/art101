@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+      
+    <!-- load jQuery library to make javascript easier (must be above our lab js)-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="./js/lab.js" DEFER></script>
+    
+    
+    <title>Twitter Archive</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a id="home" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <button onclick="toggleDarkMode()" class="dark-mode-toggle">Toggle Dark Mode</button>
+        Twitter Archive
+    </header>
+
+    <div class="tweet-container">
+        <div class="tweet" id="tweet">
+            <div class="avatar">
+                <img src="img/Twitterlogo.png" alt="User Avatar">
+            </div>
+            <div class="tweet-content">
+                <div class="user-name">Twitter Archive</div>
+                <div class="tweet-text">Welcome to Twitter Archive. Click the button for a new tweet. #TwitterArchive</div>
+            </div>
+        </div>
+        <div class="loading-spinner" id="loading-spinner"></div>
+
+        <button onclick="showNextTweet()">Show Next Tweet</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

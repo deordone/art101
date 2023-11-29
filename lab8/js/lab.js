@@ -22,3 +22,20 @@ var checkArray = array.map(function(x){
 })
 
 console.log("Squareroot of array:", checkArray)
+
+// Original array
+var originalArray = "Original Array: " + array.join(", ");
+
+// Check evenness of the array
+var evennessResults = "Evenness of Array: " + array.map(isEven).join(", ");
+
+// Square roots of the array
+var squareRootResults = "Square Roots of Array: " + array.map(function(x) {
+    return x ** 0.5;
+}).join(", ");
+
+// Combine all results
+var mapResults = originalArray + "<br>" + evennessResults + "<br>" + squareRootResults;
+
+// Use jQuery to select the element by its ID and set the HTML content
+$("#output").html(mapResults);

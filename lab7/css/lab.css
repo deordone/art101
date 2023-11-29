@@ -12,3 +12,10 @@ img {
   width: 500px;
   border: solid 3px black;
 }
+
+.output {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
